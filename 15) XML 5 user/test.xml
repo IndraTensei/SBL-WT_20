@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<!--Replace the values in every field-->
+<Company>
+    <Employee id="001">
+        <FirstName>DummyValue</FirstName>
+        <LastName>Dummy</LastName>
+        <ContactNo>1234567890</ContactNo>
+        <Email>dummy@xyz.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+
+    <Employee id="002">
+        <FirstName>DummyValue</FirstName>
+        <LastName>Dummy</LastName>
+        <ContactNo>1234567890</ContactNo>
+        <Email>dummy@xyz.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+
+    <Employee id="003">
+        <FirstName>DummyValue</FirstName>
+        <LastName>Dummy</LastName>
+        <ContactNo>1234567890</ContactNo>
+        <Email>dummy@xyz.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+
+    <Employee id="004">
+        <FirstName>DummyValue</FirstName>
+        <LastName>Dummy</LastName>
+        <ContactNo>1234567890</ContactNo>
+        <Email>dummy@xyz.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+
+    <Employee id="005">
+        <FirstName>DummyValue</FirstName>
+        <LastName>Dummy</LastName>
+        <ContactNo>1234567890</ContactNo>
+        <Email>dummy@xyz.com</Email>
+        <Address>
+            <City>Bangalore</City>
+            <State>Karnataka</State>
+            <Zip>560212</Zip>
+        </Address>
+    </Employee>
+</Company>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>li {list-style-type: none;
+        font-size: 12pt;
+        margin: 13px;
+    }
+    .validation {
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 800px;
+        background : rgb(153, 198, 211);
+        border: 1px soild rgb(1, 20, 24);
+    }
+    .validation h2 {
+        margin-left: 38px;
+    }
+    input {
+        font-size: 20pt;
+    }
+    input:focus, textarea:focus{
+        background-color: lightyellow;
+    }
+    input submit {
+        font-size: 10pt;
+    }
+
+    </style>
+</head>
+<script>function ValidateDate(inputText)
+{
+    var date_regex = /^(0\[1-9]|1\[0-2\])\/(0\[1-9]|1\d|2\\d|3\[01])\/(19|20)\d{2}$/;
+    if (!date_regex.test(inputText)) {
+        alert("You have entered a invalid Date!");
+        document.form1.Date.focus();
+        return false;
+    }
+    else{
+        alert("You have entered an valid Date!");
+        document.form1.Date.focus();
+        return true;
+
+    }
+}</script>
+
+<div class="validation">
+    <h2>Ticket Booking (Train)</h2>
+    <form name="form1" action="#">
+        <ul>
+            <li><input type="text" name="name" placeholder="Enter your name"></li>
+            <li><input type="email" name="email" placeholder="Enter your email"></li>
+            <li><input type="text" name="phone" placeholder="Enter your Phone"></li>
+            <li><input type="text" name="Date" placeholder="dd/mm/yyyy"> </li>
+            <li><input type="text" name="Destination" placeholder="Enter your Destination"> </li>
+            <li><input type="text" name="Departure" placeholder="Enter your Departure Stop"> </li>
+            <li><input type="number" name="number" placeholder="Enter no.of Tickets"> </li>
+            <li><input type="number" name="Age" placeholder="Enter your age"> </li>
+
+            <!--            Name, Email id, Phone number, Date, Destination, Departure, No. of tickets, age-->
+
+
+            <li class="Validate"><input type="submit" name="Validate" value="Validate" onclick="ValidateDate(document.form1.Date)"/></li>
+            <li> </li>
+        </ul>
+    </form>
+</div>
+
+</html>
+</html>

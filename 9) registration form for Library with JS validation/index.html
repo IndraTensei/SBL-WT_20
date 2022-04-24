@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>registration form</title>
+    <style>
+        .blank_row
+        {
+            height: 10px ;
+        }
+    </style>
+</head>
+<body  style="background-color: grey;">
+<br>
+<h2 ALIGN="CENTER">LIBRARY MANAGEMENT SYSTEM - REGISTRATION FORM</h2>
+
+<form  name="myform"  onsubmit="return validateform()" >
+    <table border="0" align="center">
+        <tbody>
+        <tr>
+            <td><label for="name">Name: </label></td>
+            <td><input id="name" maxlength="50" name="name" type="text" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <br>
+        <tr>
+            <td><label for="course">Course: </label></td>
+            <td><input id="course" maxlength="50" name="course" type="text" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <tr>
+            <td><label for="branch">Branch: </label></td>
+            <td><input id="branch" maxlength="50" name="branch" type="text" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <tr>
+            <td><label for="rollno">Roll No: </label></td>
+            <td><input id="rollno" maxlength="50" name="rollno" type="text" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input id="email" maxlength="50" name="email" type="text" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <tr>
+            <td><label for="username">Username:</label></td>
+            <td><input id="username" maxlength="50" name="username" type="text" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input id="password" maxlength="50" name="password"type="password" /></td>
+        </tr>
+
+        <tr class="blank_row"><td colspan="3"></td></tr>
+
+        <tr>
+            <td align="center"><input name="submit" type="submit" value="Submit" /></td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+</body>
+<script>
+    function validateform(){
+        var name=document.myform.name.value;
+
+        if (name==null || name==""){
+            alert("Name can't be blank");
+            return false;
+        }
+    }
+</script>
+</html>

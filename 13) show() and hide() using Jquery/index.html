@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        #box{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+        }
+
+        button{
+            margin: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="box"></div>
+
+<button id="show">Show( )</button>
+<button id="hide">Hide( )</button>
+<button id="toggle">Toggle( )</button>
+<button id="show-3000">Show(3000)</button>
+<button id="hide-3000">Hide(3000)</button>
+<button id="toggle-3000">Toggle(3000)</button>
+<button id="show-slow">Show("slow")</button>
+<button id="hide-slow">Hide("slow")</button>
+<button id="toggle-slow">Toggle("slow")</button>
+
+<script>$(document).ready(function() {
+    $("#hide").click(function() {
+        $("#box").hide();
+    });
+
+    $("#show").click(function() {
+        $("#box").show();
+    });
+
+    $("#toggle").click(function() {
+        $("#box").toggle();
+    });
+
+    $("#hide-3000").click(function() {
+        $("#box").hide(3000);
+    });
+
+    $("#show-3000").click(function() {
+        $("#box").show(3000);
+    });
+
+    $("#toggle-3000").click(function() {
+        $("#box").toggle(3000);
+    });
+
+    $("#hide-slow").click(function() {
+        $("#box").hide("slow");
+    });
+
+    $("#show-slow").click(function() {
+        $("#box").show("slow");
+    });
+
+    $("#toggle-slow").click(function() {
+        $("#box").toggle("slow");
+    });
+});
+</script>
+
+
+</body>
+</html>

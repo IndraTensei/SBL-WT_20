@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+<h2>Sample Form</h2>
+
+<form action="/action_page.php">
+    <label for="fname"><b>First name:</b></label>
+    <input type="text" id="fname" name="fname" value="Ashish"><br>
+    <label for="lname"><b>Last name:</b></label>
+    <input type="text" id="lname" name="lname" value="Thomas">
+</form>
+
+<br>
+<label for="shirt's type"><b>Types of Shirt:</b></label>
+<select name="cars" id="cars">
+    <option value="sleevless">Sleevless</option>
+    <option value="hsleeve">Full Sleeve</option>
+    <option value="fsleeve">Half Sleeve</option>
+</select><br><br>
+
+<b>Size:</b>
+<input type="radio" id="large" name="size" value="Large">
+<label for="html">Large</label>
+<input type="radio" id="medium" name="size" value="Medium">
+<label for="css">Medium</label>
+<input type="radio" id="small" name="size" value="Small">
+<label for="javascript">Small</label><br><br>
+
+<b>Colour:</b>
+<input type="checkbox" id="col1">
+<label for="col1">Red</label>
+<input type="checkbox" id="col2">
+<label for="col2">Navy</label>
+<input type="checkbox" id="col3">
+<label for="col3">Black</label><br><br>
+
+<p><b>Comment:</b></p>
+<textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
